@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd247e7a-3ff6-48da-ad63-b0df4c5f28c5" name="Default Changelist" comment="" />
+    <list default="true" id="cd247e7a-3ff6-48da-ad63-b0df4c5f28c5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/apps/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/config/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="JupyterTrust" id="ba24dfb8-bf3c-4971-b7c9-3f131d239deb" />
   <component name="ProjectId" id="1pqV4nUCnR5VH8AL8ilOoNbdNTY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
