@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cd247e7a-3ff6-48da-ad63-b0df4c5f28c5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/config/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/config/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/apps/db.sqlite3" afterDir="false" />
@@ -43,7 +41,7 @@
       <option name="presentableId" value="Default" />
       <updated>1615910421893</updated>
       <workItem from="1615910423875" duration="443000" />
-      <workItem from="1616410826923" duration="1694000" />
+      <workItem from="1616410826923" duration="4483000" />
     </task>
     <servers />
   </component>
