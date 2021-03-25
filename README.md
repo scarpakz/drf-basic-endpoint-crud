@@ -1,6 +1,6 @@
 # drf-basic-endpoint-crud
 
-** Create a data first
+**Create a data first
 
 # List Endpoint
 <code>http://localhost:8000/list/</code>
