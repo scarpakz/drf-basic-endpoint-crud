@@ -1,8 +1,10 @@
 from django.urls import path
 from .views import (
-    LanguageAPIView,
+    LanguageListAPIView,
+    LanguageCreateAPIView,
 )
 
 urlpatterns = [
-    path('languages/', LanguageAPIView.as_view(), name='language-list'),
+    path('list/', LanguageListAPIView.as_view(), name='language-list'),
+    path('create/', LanguageCreateAPIView.as_view(), name='language-create'),
 ]
