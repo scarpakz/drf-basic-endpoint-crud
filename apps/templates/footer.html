@@ -1,0 +1,31 @@
+<footer>
+
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    $(document).ready(() => {
+        $(".login-btn").on("click", (e) =>{
+            let username = $("#username").val();
+            let password = $("#password").val();
+
+            $.ajax({
+                type: 'POST',
+                data: {username: username, password: password},
+                dataType: "json",
+                beforeSend: function (xhr) {
+                   xhr.setRequestHeader('X-CSRFToken', '{{csrf_token}}');
+                },
+                url: 'http://localhost:8000/obtain-token/',
+                success: (response) => {
+                    localStorage.setItem("token", response.token)
+                    console.log(localStorage.getItem("token"))
+                },
+                error: (err)=>{
+                    console.log(err.responseText)
+                }
+            });
+        })
+    })
+</script>
