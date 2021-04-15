@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # Third Party apps
     'rest_framework',
     'rest_framework.authtoken',
+    'rest_auth',
 
     # Own apps
     'account',
@@ -121,12 +122,14 @@ USE_L10N = True
 
 USE_TZ = True
 
+SITE_ID = 1
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
 
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAuthenticated',),

@@ -17,13 +17,13 @@
                 beforeSend: function (xhr) {
                    xhr.setRequestHeader('X-CSRFToken', '{{csrf_token}}');
                 },
-                url: 'http://localhost:8000/obtain-token/',
+                url: 'http://localhost:8000/rest-auth/login/',
                 success: (response) => {
-                    localStorage.setItem("token", response.token)
-                    console.log(localStorage.getItem("token"))
+                    localStorage.setItem("key", response.key)
+                    window.location.href='/dashboard/'
                 },
                 error: (err)=>{
-                    console.log(err.responseText)
+                    alert("Username and password didn't match. Please try again!")
                 }
             });
         })

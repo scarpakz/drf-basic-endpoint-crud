@@ -3,9 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="cd247e7a-3ff6-48da-ad63-b0df4c5f28c5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/account/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/account/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/account/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/config/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/apps/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/templates/footer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +47,19 @@
       <updated>1615910421893</updated>
       <workItem from="1615910423875" duration="443000" />
       <workItem from="1616410826923" duration="4483000" />
+      <workItem from="1617540999861" duration="7864000" />
+      <workItem from="1618326967008" duration="2568000" />
+      <workItem from="1618497287405" duration="1198000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="189" width="689" height="490" key="find.popup" timestamp="1618329799370">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state x="421" y="189" width="689" height="490" key="find.popup/0.23.1440.823@0.23.1440.823" timestamp="1618329799370" />
   </component>
 </project>
