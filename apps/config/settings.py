@@ -27,7 +27,7 @@ SECRET_KEY = 'tbdra31x#9+505)bhcqv@8z85#a_w$p#mz8wy-0b9%fp%lc-rj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://immense-spire-38326.herokuapp.com', '*']
 
 
 # Application definition
