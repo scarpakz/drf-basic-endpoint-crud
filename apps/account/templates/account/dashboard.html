@@ -2,6 +2,26 @@
 {% load static %}
 {% block content %}
 <div class="test-dashboard-container">
-
+  <nav>
+    <div class="nav-wrapper blue darken-4">
+      <a href="#" class="brand-logo">SM Downtown Grocery</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#" onclick="logout()"><i class="material-icons">logout</i></a></li>
+      </ul>
+    </div>
+  </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Welcome, {{ request.user }}!</h2>
+                <h5>Image Placeholder only</h5>
+                <img src="https://whatagraph.com/storage/photos/13/product-level-actions.png" width="1000" alt="">
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}

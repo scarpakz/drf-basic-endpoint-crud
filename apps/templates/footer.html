@@ -28,4 +28,15 @@
             });
         })
     })
+
+    function logout(){
+        $.ajax({
+            type: 'POST',
+            url: 'http://localhost:8000/rest-auth/logout/',
+            success: (message) => {
+                localStorage.clear();
+                window.location.href='/'
+            }
+        });
+    }
 </script>

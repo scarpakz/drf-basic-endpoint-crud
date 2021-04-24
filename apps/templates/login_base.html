@@ -4,13 +4,12 @@
 {% include 'header.html' %}
 <body>
 {% if request.user.is_authenticated %}
-    {% block content %}
-    {% endblock %}
+    <h1>Go to <a href="/dashboard">dashboard</a></h1>
 {% else %}
-    {% block 404 %}
-        {% include '404.html' %}
+    {% block login %}
     {% endblock %}
 {% endif %}
+
 
 {% include 'footer.html' %}
 </body>
