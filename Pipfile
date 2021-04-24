@@ -11,6 +11,9 @@ djangorestframework = "*"
 djangorestframework-simplejwt = "*"
 django-rest-auth = "*"
 gunicorn = "*"
+django-heroku = "*"
+psycopg2 = "*"
+psycopg2-binary = "*"
 
 [requires]
 python_version = "3.7"
