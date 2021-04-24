@@ -19,7 +19,7 @@
                 beforeSend: function (xhr) {
                    xhr.setRequestHeader('X-CSRFToken', '{{csrf_token}}');
                 },
-                url: 'http://localhost:8000/rest-auth/login/',
+                url: '/rest-auth/login/',
                 success: (response) => {
                     localStorage.setItem("key", response.key)
                     window.location.href='/dashboard/'
@@ -37,7 +37,7 @@
             method: 'POST',
             type: "application/json",
             headers: { "X-CSRFToken": csrf_token },
-            url: 'http://localhost:8000/rest-auth/logout/',
+            url: '/rest-auth/logout/',
             success: (message) => {
                 localStorage.clear();
                 window.location.href='/'
