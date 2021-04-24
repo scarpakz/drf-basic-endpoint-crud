@@ -11,9 +11,10 @@
             let password = $("#password").val();
 
             $.ajax({
-                type: 'POST',
+                method: 'POST',
                 data: {username: username, password: password},
-                dataType: "json",
+                type: "application/json",
+                headers: { "X-CSRFToken": csrf_token },
                 beforeSend: function (xhr) {
                    xhr.setRequestHeader('X-CSRFToken', '{{csrf_token}}');
                 },
@@ -31,7 +32,9 @@
 
     function logout(){
         $.ajax({
-            type: 'POST',
+            method: 'POST',
+            type: "application/json",
+            headers: { "X-CSRFToken": csrf_token },
             url: 'http://localhost:8000/rest-auth/logout/',
             success: (message) => {
                 localStorage.clear();
