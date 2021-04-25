@@ -7,13 +7,13 @@
 <script>
     $(document).ready(() => {
         $(".login-btn").on("click", (e) =>{
-            let username = $("#username").val();
+            let email = $("#email").val();
             let password = $("#password").val();
             let csrf_token = $('[name="csrfmiddlewaretoken"]').attr('value');
 
             $.ajax({
                 method: 'POST',
-                data: {username: username, password: password},
+                data: {email: email, password: password},
                 type: "application/json",
                 headers: { "X-CSRFToken": csrf_token },
                 beforeSend: function (xhr) {
@@ -25,7 +25,35 @@
                     window.location.href='/dashboard/'
                 },
                 error: (err)=>{
-                    alert("Username and password didn't match. Please try again!")
+                    alert("Fields didn't match. Please try again!")
+                }
+            });
+        })
+    })
+
+    $(document).ready(() => {
+        $(".reg-btn").on("click", (e) =>{
+            let email = $("#email").val();
+            let username = $("#username").val();
+            let password1 = $("#password1").val();
+            let password2 = $("#password2").val();
+            let csrf_token = $('[name="csrfmiddlewaretoken"]').attr('value');
+
+            $.ajax({
+                method: 'POST',
+                data: {email: email, username: username, password1: password1, password2: password2},
+                type: "application/json",
+                headers: { "X-CSRFToken": csrf_token },
+                beforeSend: function (xhr) {
+                   xhr.setRequestHeader('X-CSRFToken', '{{csrf_token}}');
+                },
+                url: '/rest-auth/registration/',
+                success: (response) => {
+                    localStorage.setItem("key", response.key)
+                    window.location.href='/dashboard/'
+                },
+                error: (err)=>{
+                    alert("Email and password didn't match. Please try again!")
                 }
             });
         })

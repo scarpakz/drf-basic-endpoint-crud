@@ -1,0 +1,42 @@
+{% extends 'login_base.html' %}
+{% load static %}
+{% block login %}
+<div class="test-login-container">
+    <div class="container">
+        <div class="row">
+            <div class="col s3"></div>
+            <form method="POST" class="col s6">
+                {% csrf_token %}
+                <h1>GoCart</h1>
+                <div class="row">
+                    <div class="input-field col s12">
+                      <input id="email" type="text" class="validate">
+                      <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                      <input id="username" type="text" class="validate">
+                      <label for="username">Username</label>
+                    </div>
+                </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="password1" type="password" class="validate">
+                  <label for="password1">Password</label>
+                </div>
+              </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                      <input id="password2" type="password" class="validate">
+                      <label for="password2">Confirm Password</label>
+                    </div>
+                  </div>
+                <a href="/" class="waves-effect blue darken-1 waves-light btn">Sign In</a>
+                <a class="reg-btn waves-effect red darken-1 waves-light btn">Register</a>
+            </form>
+            <div class="col s3"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}
